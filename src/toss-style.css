@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Pretendard', sans-serif;
+}
+
+.shiny-gradient-text {
+    background: linear-gradient(90deg, #a6c0fe, #f68084, #a6c0fe);
+    background-size: 200% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}

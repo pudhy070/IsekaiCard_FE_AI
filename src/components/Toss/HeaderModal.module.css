@@ -1,0 +1,54 @@
+.modalOverlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modalContent {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.menuItem {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s;
+}
+
+.menuItem:hover {
+    background-color: #F3F4F6;
+}
+
+.menuTitle {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.menuDesc {
+    font-size: 0.875rem;
+    color: #6B7280;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

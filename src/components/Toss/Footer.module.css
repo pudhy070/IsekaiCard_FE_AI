@@ -1,0 +1,89 @@
+.footer {
+    background-color: #F9FAFB;
+    padding: 4rem 0 2rem 0;
+    border-top: 1px solid #E5E7EB;
+    color: #6B7280;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #E5E7EB;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.linkColumns {
+    display: flex;
+    gap: 4rem;
+    flex-grow: 1;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.column h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.column a {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.column a:hover {
+    color: #3182F6;
+}
+
+.socialContainer h4 {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socialIcons a {
+    color: #9CA3AF;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+}
+
+.socialIcons a:hover {
+    color: #3182F6;
+}
+
+.footerBottom {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.footerBottom p {
+    margin: 0;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+    }
+    .linkColumns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
