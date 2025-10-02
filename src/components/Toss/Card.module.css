@@ -1,0 +1,71 @@
+.cardWrapper {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardWrapper:hover {
+    transform: scale(1.05);
+}
+
+.large {
+    width: 20rem;
+    height: 30rem;
+}
+
+.small {
+    width: 15rem;
+    height: 22rem;
+}
+
+.gradientBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.gradientPremium {
+    background-image: linear-gradient(to bottom right, #a855f7, #4f46e5);
+}
+.gradientTravel {
+    background-image: linear-gradient(to bottom right, #facc15, #f97316);
+}
+.gradientShopping {
+    background-image: linear-gradient(to bottom right, #ef4444, #e11d48);
+}
+.gradientBasic {
+    background-image: linear-gradient(to bottom right, #6b7280, #4b5563);
+}
+
+.cardImage {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cardText {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.cardTitle {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
+}
+
+.cardGrade {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+}

@@ -1,8 +1,7 @@
 import React from 'react';
 import Card from './Card';
-import styles from './CardLineup.module.css'; // CardLineup 전용 스타일을 불러옵니다.
+import styles from './CardLineup.module.css'; 
 
-// public/images/ 경로에 맞게 이미지 경로를 수정하고, 등급(grade)을 Card 컴포넌트에 맞게 변경합니다.
 const cardData = [
     { id: 1, name: '데일리 카드', grade: 'SHOPPING', imageUrl: '/images/card2.jpg' },
     { id: 2, name: '위켄드 카드', grade: 'TRAVEL', imageUrl: '/images/card3.jpg' },
