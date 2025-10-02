@@ -2,7 +2,8 @@ import React from 'react';
 
 function EventList({ events }) {
     if (!events) return null;
-
+    const styles = {};
+    
     return (
         <div style={styles.container}>
             <h3 style={styles.sectionTitle}>진행중인 이벤트</h3>
