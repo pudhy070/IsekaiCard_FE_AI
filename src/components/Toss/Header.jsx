@@ -23,17 +23,18 @@ function Header() {
 
                 <nav className={styles.nav}>
                     <div onMouseEnter={() => handleMouseEnter('cards')}>
-                        <a href="#" className={styles.navLink}>카드</a>
+                        <span className={styles.navLink} style={{ cursor: 'pointer' }}>카드</span>
                     </div>
                     <div onMouseEnter={() => handleMouseEnter('benefits')}>
-                        <a href="#" className={styles.navLink}>혜택</a>
+                        <span className={styles.navLink} style={{ cursor: 'pointer' }}>혜택</span>
                     </div>
-                    <a href="#" className={styles.navLink}>이벤트</a>
+                    <Link to="/events" className={styles.navLink}>이벤트</Link>
                 </nav>
 
-                <button className="header-button">
+                <Link to="/apply" className="header-button">
                     카드 신청하기
-                </button>
+                </Link>
+
             </div>
 
             <HeaderModal activeModal={activeModal} />
@@ -42,3 +43,4 @@ function Header() {
 }
 
 export default Header;
+

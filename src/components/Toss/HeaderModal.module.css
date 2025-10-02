@@ -1,3 +1,5 @@
+
+
 .modalOverlay {
     position: absolute;
     top: 100%;
@@ -34,6 +36,7 @@
 .menuTitle {
     font-weight: 600;
     font-size: 1rem;
+    color: #111827;
     margin-bottom: 0.25rem;
 }
 

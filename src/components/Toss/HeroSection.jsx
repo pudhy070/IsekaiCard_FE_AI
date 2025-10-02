@@ -18,7 +18,7 @@ function HeroSection() {
                 <Card
                     name="Check Card"
                     grade="Basic"
-                    imageUrl="/images/"
+                    imageUrl="/images/card11.jpg"
                     isLarge={true}
                 />
             </div>
