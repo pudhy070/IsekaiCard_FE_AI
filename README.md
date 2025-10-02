@@ -152,3 +152,16 @@ pip install -r requirements.txt
 ```
 flask run
 ```
+
+---
+
+
+### Isekai Card Spring Boot 
+```
+https://github.com/pudhy070/isekaiCard_SpringBoot
+```
+
+### Isekai Card Flask 
+```
+https://github.com/pudhy070/IsekaiCard_Flask
+```
