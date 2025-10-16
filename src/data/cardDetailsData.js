@@ -82,5 +82,42 @@ export const cardDetailsData = {
             { id: 2, title: '[플래티넘] KLPGA 대회 초청 이벤트', date: '2025-09-25', content: '플래티넘 고객님을 위한 KLPGA 프로암 대회에 초대합니다.' },
             { id: 3, title: '[공통] 가을맞이 제주도 여행 특가', date: '2025-09-05', content: '모든 카드 고객 대상 제주도 항공권 및 숙박 할인 프로모션 진행 중' },
         ]
+    },
+    ai: {
+        name: '나에게 맞는 카드 찾기',
+        description: '특별한 당신을 위한 서비스! 자신에게 맞는 카드를 찾아봐요!',
+        imageUrl: '/images/card11.jpg',
+        theme: { primary: '#a7a7a7' },
+        benefits: {
+            cashback: [
+                { title: '데일리 카드', description: '매일 이용하는 버스/지하철 요금을 돌려받으세요.' },
+                { title: '위켄드 카드', description: 'OTT 서비스 20% 캐쉬백' },
+                { title: '플레티넘 카드', description: '연간 1,000만원 이상 사용 시 차년도 연회비 전액 캐쉬백' },
+            ],
+            discount: [
+                { title: '데일리 카드', description: '편의점 10% 현장 할인' },
+                { title: '위켄드 카드', description: '영화관 5,000원 할인' },
+                { title: '플레티넘 카드', description: '공항 라운지 무료 이용' },
+            ],
+            points: [
+                { title: '데일리 카드', description: '모든 가맹점 0.5% 적립' },
+                { title: '위켄드 카드', description: '주말 모든 가맹점 1.5% 적립' },
+                { title: '플레티넘 카드', description: '모든 가맹점 1.2% 무제한 적립' },
+
+            ]
+        },
+        events: [
+            { id: 1, title: '[공통] 내 카드 찾기 신청 이벤트', date: '2025-10-14', content: '내 카드 찾기로 카드를 신청하신분께 소정의 상품권을 증정합니다.' },
+            { id: 2, title: '[공통] 10월 실적 이벤트', date: '2025-10-01', content: '10월에 카드 신청 하시고 누적 100만원 사용하신분께 감사 인사를 드립니다' },
+            { id: 3, title: '[공통] 11월 실적 이벤트(예정)', date: '2025-10-04', content: '11월에 내 카드 찾기로 신청하신후 11월 카드 사용량이 300만원 넘으실경우 10% 캐쉬백 해드립니다.' },
+        ]
+    },
+    aiGuide: {
+        name: 'AI 카드 찾기 가이드',
+        description: 'AI 챗봇에게 당신의 소비 습관을 알려주세요. 수많은 카드 중에서 당신에게 꼭 맞는 최고의 카드를 찾아드립니다.',
+        imageUrl: '/images/card_ai_guide.png',
+        theme: {
+            primary: '#5A67D8', // 테마 색상
+        },
     }
 };

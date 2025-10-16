@@ -25,11 +25,16 @@ function Header() {
                     <div onMouseEnter={() => handleMouseEnter('cards')}>
                         <span className={styles.navLink} style={{ cursor: 'pointer' }}>카드</span>
                     </div>
+                    <div onMouseEnter={() => handleMouseEnter('ai')}>
+                        <span className={styles.navLink} style={{ cursor: 'pointer' }}>AI</span>
+                    </div>
                     <div onMouseEnter={() => handleMouseEnter('benefits')}>
                         <span className={styles.navLink} style={{ cursor: 'pointer' }}>혜택</span>
                     </div>
                     <Link to="/events" className={styles.navLink}>이벤트</Link>
+
                 </nav>
+
 
                 <Link to="/apply" className="header-button">
                     카드 신청하기

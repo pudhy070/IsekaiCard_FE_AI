@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import styles from './EventPage.module.css';
 
 const dummyEvents = [
-    { id: 'dummy-1', title: '이세계 카드 출시 기념 이벤트!', author: '운영자', createdAt: '2025-10-01' },
-    { id: 'dummy-2', title: '친구 초대하고 프리미엄 혜택 받자', author: '운영자', createdAt: '2025-09-28' },
-    { id: 'dummy-3', title: '주말엔 위켄드 카드로 5% 추가 할인', author: '운영자', createdAt: '2025-09-25' },
+    { id: 'dummy-1', title: '이세계 카드 출시 기념 이벤트!', author: '운영자', created_at: '2025-10-01' },
+    { id: 'dummy-2', title: '친구 초대하고 프리미엄 혜택 받자', author: '운영자', created_at: '2025-09-28' },
+    { id: 'dummy-3', title: '주말엔 위켄드 카드로 5% 추가 할인', author: '운영자', created_at: '2025-09-25' },
 ];
 
 function EventPage() {
@@ -21,7 +21,8 @@ function EventPage() {
                 const data = await response.json();
 
                 if (data && data.length > 0) {
-                    const sortedData = data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+                    // 서버에서 이미 정렬해서 보내주지만, 클라이언트에서 한번 더 정렬
+                    const sortedData = data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
                     setEvents(sortedData);
                 } else {
                     setEvents(dummyEvents);
@@ -52,7 +53,8 @@ function EventPage() {
                                     <h2 className={styles.postTitle}>{event.title}</h2>
                                     <div className={styles.postMeta}>
                                         <span>작성자: {event.author}</span>
-                                        <span>등록일: {new Date(event.createdAt).toLocaleDateString()}</span>
+                                        {/* ▼▼▼ 이 부분이 수정되었습니다 ▼▼▼ */}
+                                        <span>등록일: {new Date(event.created_at).toLocaleDateString()}</span>
                                     </div>
                                 </Link>
                             </li>

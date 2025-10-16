@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function CardApplicationPage() {
+function Chat() {
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
-        card_type: 'daily',
+        // card_type: 'daily',
         name: '',
         email: '',
         phone: '',
@@ -56,17 +56,17 @@ function CardApplicationPage() {
     return (
         <div className="application-page-container">
             <main className="application-form-container">
-                <h1 className="section-title">카드 신청</h1>
-                <p className="section-subtitle">신청 정보를 정확하게 입력해주세요.</p>
+                <h1 className="section-title">온라인 상담</h1>
+                <p className="section-subtitle">페이지 준비중 입니다.</p>
                 <form onSubmit={handleSubmit} className="application-form">
-                    <div className="form-group">
-                        <label htmlFor="card_type">카드 종류</label>
-                        <select id="card_type" name="card_type" value={formData.card_type} onChange={handleChange}>
-                            <option value="daily">데일리 카드</option>
-                            <option value="weekend">위켄드 카드</option>
-                            <option value="platinum">플래티넘 카드</option>
-                        </select>
-                    </div>
+                    {/*<div className="form-group">*/}
+                    {/*    <label htmlFor="card_type">카드 종류</label>*/}
+                    {/*    <select id="card_type" name="card_type" value={formData.card_type} onChange={handleChange}>*/}
+                    {/*        <option value="daily">데일리 카드</option>*/}
+                    {/*        <option value="weekend">위켄드 카드</option>*/}
+                    {/*        <option value="platinum">플래티넘 카드</option>*/}
+                    {/*    </select>*/}
+                    {/*</div>*/}
                     <div className="form-group">
                         <label htmlFor="name">이름</label>
                         <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="홍길동" required />
@@ -85,13 +85,13 @@ function CardApplicationPage() {
                     </div>
 
                     <div className="form-button-group">
-                        <button type="submit" className="header-button">신청하기</button>
-                        <button type="button" onClick={() => navigate('/status')} className="secondary-button">
-                            신청 현황 조회
-                        </button>
-                        <button type="button" onClick={() => navigate('/admin')} className="admin-button">
-                            관리자 모드
-                        </button>
+                        <button type="submit" className="header-button" disabled>페이지 준비중 입니다.</button>
+                        {/*<button type="button" onClick={() => navigate('/status')} className="secondary-button">*/}
+                        {/*    신청 현황 조회*/}
+                        {/*</button>*/}
+                        {/*<button type="button" onClick={() => navigate('/admin')} className="admin-button">*/}
+                        {/*    관리자 모드*/}
+                        {/*</button>*/}
                     </div>
                 </form>
             </main>
@@ -99,5 +99,5 @@ function CardApplicationPage() {
     );
 }
 
-export default CardApplicationPage;
+export default Chat;
 

@@ -10,27 +10,27 @@ function Footer() {
                     <div className={styles.linkColumns}>
                         <div className={styles.column}>
                             <h4>상품</h4>
-                            <a href="http://localhost:5173/daily">카드</a>
-                            <a href="#">적금</a>
+                            <a href="#">카드</a>
+                            <a href="https://isekai-card.kro.kr/">적금</a>
                             <a href="#">대출</a>
                         </div>
                         <div className={styles.column}>
                             <h4>회사</h4>
                             <a href="https://isekai-archive.kro.kr/">회사 소개</a>
-                            <a href="https://isekai-archive.kro.kr/contact">채용</a>
+                            <a href="https://github.com/pudhy070?tab=repositories">채용</a>
                             <a href="#">공지사항</a>
                         </div>
                         <div className={styles.column}>
                             <h4>지원</h4>
-                            <a href="https://github.com/pudhy070/Isekai_Archive-Group-Ware">고객센터</a>
-                            <a href="https://github.com/pudhy070/Isekai_Archive-Group-Ware">FAQ</a>
-                            <a href="https://github.com/pudhy070/Isekai_Archive-Group-Ware">약관 및 정책</a>
+                            <a href="h">고객센터</a>
+                            <a href="">FAQ</a>
+                            <a href="">약관 및 정책</a>
                         </div>
                     </div>
                     <div className={styles.socialContainer}>
                         <h4>Follow Us</h4>
                         <div className={styles.socialIcons}>
-                            <a href="https://bluearchive.nexon.com/home" aria-label="Facebook"><FaFacebook /></a>
+                            <a href="https://facebook.com" aria-label="Facebook"><FaFacebook /></a>
                             <a href="https://www.instagram.com/" aria-label="Instagram"><FaInstagram /></a>
                             <a href="https://www.youtube.com/watch?v=9iRa-68EX7g" aria-label="Youtube"><FaYoutube /></a>
                         </div>

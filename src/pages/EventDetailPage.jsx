@@ -55,11 +55,16 @@ function EventDetailPage() {
                     <h1 className={styles.postTitle}>{event.title}</h1>
                     <div className={styles.postMeta}>
                         <span>작성자: {event.author}</span>
-                        <span>작성일: {new Date(event.createdAt).toLocaleString()}</span>
+                        <span>작성일: {new Date(event.created_at).toLocaleString()}</span>
+                        {event.updated_at && (
+                            <span style={{ marginLeft: '10px', color: '#888' }}>
+                                (수정일: {new Date(event.updated_at).toLocaleString()})
+                            </span>
+                        )}
                     </div>
                 </div>
                 <div className={styles.postContent}>
-                    <p>{event.content}</p>
+                    <p style={{ whiteSpace: 'pre-wrap' }}>{event.content}</p>
                 </div>
                 <div className={styles.buttonContainer}>
                     <Link to="/events" className={styles.listButton}>목록</Link>

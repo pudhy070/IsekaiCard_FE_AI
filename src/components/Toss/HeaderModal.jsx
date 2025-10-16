@@ -16,6 +16,11 @@ function HeaderModal({ activeModal }) {
             { title: '할인', desc: '생활 전반에 폭넓은 할인' },
             { title: '포인트', desc: '차곡차곡 쌓이는 포인트 혜택' },
         ],
+        ai: [
+            { title: '나에게 맞는 카드 찾기', desc: 'AI가 카드를 추천해 줘요!', link: '/ai' },
+            { title: '카드 찾기 설명서', desc: '어떻게 찾는지 모르신다면 한번 확인해보세요!', link: '/aiguide' },
+            { title: '카드 찾기 온라인 상담', desc: 'AI말고 상담원이 직접 찾아줘요!', link: '/chat' },
+        ],
         events: [
             { title: '진행중인 이벤트', desc: '참여하고 특별한 혜택을 받으세요', link: '/events' },
             { title: '지난 이벤트', desc: '아쉽게 놓친 이벤트들을 확인해보세요', link: '/events' },
@@ -41,6 +46,16 @@ function HeaderModal({ activeModal }) {
                             </Link>
                         );
                     }
+
+                    if (activeModal === 'ai') {
+                        return (
+                            <Link to={item.link} key={index} className={styles.menuItem}>
+                                <div className={styles.menuTitle}>{item.title}</div>
+                                <div className={styles.menuDesc}>{item.desc}</div>
+                            </Link>
+                        );
+                    }
+
 
                     if (activeModal === 'benefits') {
                         return (
