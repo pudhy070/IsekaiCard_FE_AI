@@ -1,4 +1,4 @@
-# 💳 이세계 카드 (Isekai Card) 프로젝트
+# 💳 이세계 카드 (Isekai Card) 프로젝트 
 React, Spring Boot, Flask를 활용한 마이크로서비스 아키텍처(MSA) 형식의 카드 발급 신청 및 관리 플랫폼입니다.
 
 현대적인 웹 UI/UX를 갖춘 카드사 웹사이트를 컨셉으로, 기능별로 백엔드 서버를 분리하여 각 기술 스택의 장점을 최대한 활용하고자 했습니다. 사용자는 다양한 카드의 혜택을 확인하고, 이벤트를 조회하며, 직접 카드를 신청하고 그 현황을 추적할 수 있습니다.
@@ -154,11 +154,13 @@ flask run
 
 
 ### Isekai Card Spring Boot 
+
 ```
 https://github.com/pudhy070/IsekaiCard_SpringBoot_AI
 ```
 
 ### Isekai Card Flask (AI)
+
 ```
 https://github.com/pudhy070/IsekaiCard_LLM
 ```
